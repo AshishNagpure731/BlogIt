@@ -1,0 +1,103 @@
+.container {
+    margin: 0 1.8%;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .heading {
+    font-size: 32px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    align-items: center;
+  }
+  
+  .loginButton {
+    font-size: 14px;
+  border: none;
+  background-color: transparent;
+  font-size: medium;
+  font-weight: bold;
+    color: grey;
+    border: 1px solid black;
+    /* height: 25px; */
+    /* width: 60px; */
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  .joinButton {
+    border: none;
+  background-color: transparent;
+  font-size: medium;
+  font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: #6947bf;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      margin: 0 10%;
+    }
+  
+    .heading {
+      font-size: 24px;
+    }
+  
+    .buttonContainer {
+      width: 200px;
+    }
+  
+    .loginButton,
+    .joinButton {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .container {
+      margin: 0 5%;
+    }
+  
+    .heading {
+      font-size: 20px;
+    }
+    .buttonContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 130px;
+        
+        align-items: center;
+      }
+  
+    .loginButton,
+    .joinButton {
+        width: 60px;
+        height: 25px;
+      font-size: 10px;
+      text-align: center;
+    }
+    
+      
+      
+  }
+  
