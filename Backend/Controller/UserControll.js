@@ -1,6 +1,9 @@
 const {  mongoose } = require('mongoose')
 const userModel = require('../model/User')
+<<<<<<< HEAD
 const bcrypt = require('bcrypt')
+=======
+>>>>>>> d5c1676eb9bbed645b57d6ec413a11e9ac0128b0
 
 // async function r6egisterUser(email,password) {
 //   const result = await mongoose.connection.collection('auth').insertOne({
@@ -13,8 +16,11 @@ const bcrypt = require('bcrypt')
 module.exports={
   async register(req, res) {
     const { email, password } = req.body;
+<<<<<<< HEAD
     const hashedPassword = await bcrypt.hash(password, 10);
     console.log(hashedPassword);
+=======
+>>>>>>> d5c1676eb9bbed645b57d6ec413a11e9ac0128b0
     try {
       // Check if user already exists
       const existingUser = await userModel.findOne({ email });
@@ -23,7 +29,11 @@ module.exports={
       }
 
       // Create a new user
+<<<<<<< HEAD
       const newUser = await new userModel({ email:email, password:hashedPassword });
+=======
+      const newUser = await new userModel({ email:email, password:password });
+>>>>>>> d5c1676eb9bbed645b57d6ec413a11e9ac0128b0
       await newUser.save();
       res.status(201).send({ message: "User registered successfully",access:true });
     } catch (err) {
@@ -40,8 +50,12 @@ module.exports={
             console.log(user)  
         
             if (user) {
+<<<<<<< HEAD
               const isMatch = await bcrypt.compare(password, user.password);
               if (isMatch){//user.password === password) {
+=======
+              if (user.password === password) {
+>>>>>>> d5c1676eb9bbed645b57d6ec413a11e9ac0128b0
                 res.send({ validate: true, message: "Welcome", access:true });
                 console.log("Welcome");
               } else {

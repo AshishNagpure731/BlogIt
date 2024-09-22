@@ -1,6 +1,9 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "bcrypt": "^5.1.1",
+=======
+>>>>>>> d5c1676eb9bbed645b57d6ec413a11e9ac0128b0
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "mongoose": "^8.5.3"

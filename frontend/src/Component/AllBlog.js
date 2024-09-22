@@ -12,7 +12,11 @@ const AllBlog = () => {
 
         }
 
+<<<<<<< HEAD
         let response = await fetch("https://blog-it-e87y.onrender.com/posts", {
+=======
+        let response = await fetch("http://localhost:8000/posts", {
+>>>>>>> d5c1676eb9bbed645b57d6ec413a11e9ac0128b0
             method: "GET",
             headers: headersList
         });
