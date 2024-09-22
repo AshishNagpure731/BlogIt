@@ -1,0 +1,79 @@
+/* src/components/Sidebar.css */
+
+.sidebar {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    /* border: 2px solid red; */
+    width: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+  
+  .spacer {
+    height: 12px;
+  }
+  
+  .icon1 {
+    background-color: #6947bf;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+  }
+  .icon2 {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+  }
+  .icon3 {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+  }
+  /* .icon:first-of-type {
+    background-color: #6947bf;
+  } */
+  
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+    .sidebar {
+      width: 40px;
+    }
+  
+    .icon {
+      height: 25px;
+      width: 25px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .sidebar {
+      width: 30px;
+    }
+  
+    .icon1 {
+        background-color: #6947bf;
+        height: 20px;
+        width: 20px;
+        border-radius: 4px;
+      }
+      .icon2 {
+        height:20px;
+        width: 20px;
+        border-radius: 4px;
+      }
+      .icon3 {
+        height: 20px;
+        width: 20px;
+        border-radius: 4px;
+      }
+  }
+  
