@@ -24,11 +24,7 @@ const LogIn = () => {
              "password":Password
            });
            
-<<<<<<< HEAD
            let response = await fetch(`https://blog-it-e87y.onrender.com/auth/register`, { 
-=======
-           let response = await fetch(`http://localhost:8000/auth/register`, { 
->>>>>>> d5c1676eb9bbed645b57d6ec413a11e9ac0128b0
              method: "POST",
              body: bodyContent,
              headers: headersList
@@ -52,11 +48,7 @@ const LogIn = () => {
             "email": Email,
             "password":Password
            });
-<<<<<<< HEAD
            let response = await fetch("https://blog-it-e87y.onrender.com/auth/login", { 
-=======
-           let response = await fetch("http://localhost:8000/auth/login", { 
->>>>>>> d5c1676eb9bbed645b57d6ec413a11e9ac0128b0
              method: "POST",
              body: bodyContent,
              headers: headersList

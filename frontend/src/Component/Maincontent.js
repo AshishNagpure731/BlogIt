@@ -12,11 +12,7 @@ const Maincontent = () => {
 
         }
 
-<<<<<<< HEAD
         let response = await fetch(`https://blog-it-e87y.onrender.com/posts/${FindByID}`, {//FindByID
-=======
-        let response = await fetch(`http://localhost:8000/posts/${FindByID}`, {//FindByID
->>>>>>> d5c1676eb9bbed645b57d6ec413a11e9ac0128b0
             method: "GET",
             headers: headersList
         });
@@ -33,11 +29,7 @@ const Maincontent = () => {
 
         }
 
-<<<<<<< HEAD
         let response = await fetch("https://blog-it-e87y.onrender.com/comment", {
-=======
-        let response = await fetch("http://localhost:8000/comment", {
->>>>>>> d5c1676eb9bbed645b57d6ec413a11e9ac0128b0
             method: "GET",
             headers: headersList
         });
@@ -59,11 +51,7 @@ const Maincontent = () => {
                 "comment": Text
             });
 
-<<<<<<< HEAD
             let response = await fetch("https://blog-it-e87y.onrender.com/comment", {
-=======
-            let response = await fetch("http://localhost:8000/comment", {
->>>>>>> d5c1676eb9bbed645b57d6ec413a11e9ac0128b0
                 method: "POST",
                 body: bodyContent,
                 headers: headersList

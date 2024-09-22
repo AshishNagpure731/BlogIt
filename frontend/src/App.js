@@ -46,14 +46,6 @@ function App() {
           <Sidebar />
           <div style={{flex:1, display: 'flex', flexDirection: 'column', backgroundColor: '#e5ecf3', borderTopLeftRadius: '20px',overflow:'scroll'}}> {/*replace flex 1 with minheight 100% */}
             <AppContext.Provider value={{ Auth, dispatchUserEvent,FindByID,UserName }}>
-<<<<<<< HEAD
-=======
-              {/* {Auth ? <Maincontent /> : <LogIn />} */}
-              {/* <Maincontent/> */}
-              {/* <LogIn/> */}
-              {/* <AllBlog/> */}
-              
->>>>>>> d5c1676eb9bbed645b57d6ec413a11e9ac0128b0
               <Routes>
                 <Route path="/Maincontent" element={<Maincontent />} />
                 <Route path="/AllBlog" element={<AllBlog/>} />
