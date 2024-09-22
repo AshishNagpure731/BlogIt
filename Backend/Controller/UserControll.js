@@ -1,6 +1,6 @@
 const {  mongoose } = require('mongoose')
 const userModel = require('../model/User')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs');
 
 // async function r6egisterUser(email,password) {
 //   const result = await mongoose.connection.collection('auth').insertOne({
